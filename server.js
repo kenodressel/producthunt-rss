@@ -149,7 +149,7 @@ function renderRSS() {
         posts.forEach(function (post) {
             feed.item({
                 title: post.name,
-                description: post.tagline + '<br>' + post.votes_count + 'Upvotes & ' + post.comments_count + ' Comments',
+                description: post.tagline,
                 url: post.redirect_url,
                 author: post.user.name,
                 date: post.day,
